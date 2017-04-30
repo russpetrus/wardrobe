@@ -1,0 +1,74 @@
+﻿@model WardrobeApp.Models.Bottom
+
+@{
+    ViewBag.Title = Model.Name;
+}
+
+<h2>Details: @Model.Name</h2>
+
+<div>
+
+    <a class="glyphicon-index-link" href="@Url.Action("Edit", new { id = Model.BottomID })">
+        <i class="glyphicon glyphicon-pencil"></i>
+        Edit
+        <span class="sr-only">Edit</span>
+    </a>
+    <a class="glyphicon-index-link" href="@Url.Action("Index")">
+        <i class="glyphicon glyphicon-th-list"></i>
+        Back to List
+        <span class="sr-only">Index</span>
+    </a>
+
+    <hr />
+    <div class="row">
+        <div class="col-md-6">
+            <img src="@Url.Content("~/content/images/" + Model.Photo)" />
+        </div>
+        <div class="col-md-6">
+            <dl class="dl-horizontal">
+                <dt>
+                    @Html.DisplayNameFor(model => model.Name)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Name)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Color)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Color)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Type)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Type)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Season)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Season)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Occasion)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Occasion)
+                </dd>
+            </dl>
+        </div>
+    </div>
+</div>
+
+
+
