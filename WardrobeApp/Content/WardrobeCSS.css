@@ -52,7 +52,7 @@ div.index-infoholder{
    
    text-align:center;
    width:95%;
-   background-color:#C09F80;
+   background-color:rgb(224, 220, 217);
    margin-top:20px;
    margin-bottom:15px;
    margin-left:auto;
@@ -88,15 +88,13 @@ div.index-infoholder{
 
 .icon-holder{
     display:inline-block;
-
-     
 }
 
 .glyphicon-index-link{
     font-size:16px;
     margin-left:5px;
     margin-right:5px;
-    color:#76323F;
+    color:#565656;
 
 }
 
@@ -106,3 +104,49 @@ div.index-infoholder{
 }
 
 
+.img-thumbnail{
+    width:50px;
+    float:left;
+    margin-right:10px;
+    margin-top: 0.83em;
+    margin-bottom: 0.83em;
+}
+
+.detail-photo{
+   width:auto;
+   display:block;
+   margin: auto;
+  
+
+}
+
+
+.red-box{
+    height:250px;
+    background-color:#76323F;
+    color:white;
+    margin-bottom:15px;
+}
+
+.tan-box{
+    height:250px;
+    background-color: #C09F80;
+    color: white;
+    margin-bottom:15px;
+}
+
+.gray-box{
+    height:250px;
+    background-color: #B5B1AF;
+    color:white;
+    margin-bottom:15px;
+
+}
+
+.chalkboard-box{
+    height:250px;
+    background-color: #565656;
+    color:white;
+    margin-bottom:15px;
+
+}

@@ -4,71 +4,122 @@
     ViewBag.Title = Model.Name;
 }
 
-<h2>Details: @Model.Name</h2>
-
-<div>
-
-    <a class="glyphicon-index-link" href="@Url.Action("Edit", new { id = Model.BottomID })">
-        <i class="glyphicon glyphicon-pencil"></i>
-        Edit
-        <span class="sr-only">Edit</span>
-    </a>
-    <a class="glyphicon-index-link" href="@Url.Action("Index")">
-        <i class="glyphicon glyphicon-th-list"></i>
-        Back to List
-        <span class="sr-only">Index</span>
-    </a>
-
-    <hr />
-    <div class="row">
-        <div class="col-md-6">
-            <img src="@Url.Content("~/content/images/" + Model.Photo)" />
-        </div>
-        <div class="col-md-6">
-            <dl class="dl-horizontal">
-                <dt>
-                    @Html.DisplayNameFor(model => model.Name)
-                </dt>
-
-                <dd>
-                    @Html.DisplayFor(model => model.Name)
-                </dd>
-
-                <dt>
-                    @Html.DisplayNameFor(model => model.Color)
-                </dt>
-
-                <dd>
-                    @Html.DisplayFor(model => model.Color)
-                </dd>
-
-                <dt>
-                    @Html.DisplayNameFor(model => model.Type)
-                </dt>
-
-                <dd>
-                    @Html.DisplayFor(model => model.Type)
-                </dd>
-
-                <dt>
-                    @Html.DisplayNameFor(model => model.Season)
-                </dt>
-
-                <dd>
-                    @Html.DisplayFor(model => model.Season)
-                </dd>
-
-                <dt>
-                    @Html.DisplayNameFor(model => model.Occasion)
-                </dt>
-
-                <dd>
-                    @Html.DisplayFor(model => model.Occasion)
-                </dd>
-            </dl>
-        </div>
+<div class="container">
+    <div>
+        <img class="img-thumbnail" src="@Url.Content("~/content/images/" + Model.Photo)" />
     </div>
+
+    <div>
+        <h2 class="red">Details: @Model.Name</h2>
+
+        <a class="glyphicon-index-link" href="@Url.Action("Edit", new { id = Model.BottomID })">
+            <i class="glyphicon glyphicon-pencil"></i>
+            Edit
+            <span class="sr-only">Edit</span>
+        </a>
+        <a class="glyphicon-index-link" href="@Url.Action("Index")">
+            <i class="glyphicon glyphicon-th-list"></i>
+            Back to List
+            <span class="sr-only">Index</span>
+        </a>
+    </div>
+    <hr />
+
+    <div class="row">
+        <div class="col-md-5">
+            <img class="detail-photo" src="@Url.Content("~/content/images/" + Model.Photo)" />
+        </div>
+        <div class="col-md-7">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="red-box"></div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="tan-box"></div>
+                </div>
+                
+                    <div class="col-sm-6">
+                        <div class="gray-box"></div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="chalkboard-box"></div>
+                   
+                </div>
+            </div>
+        </div>
+        
+
+    </div>
+
+
+
+
+
+    @*<div>
+
+            <img class="detail-photo" src="@Url.Content("~/content/images/" + Model.Photo)" />
+        </div>
+
+        <div class="detail-page-info-holder">
+            <div class="red-box">
+                <h4>@Html.DisplayNameFor(model => model.Type)></h4>
+                <p>@Html.DisplayFor(model => model.Type)</p>
+            </div>
+        </div>*@
+
 </div>
+
+
+@*<div class="row">
+                <div class="col-md-6">
+                    <img class="detail-photo" src="@Url.Content("~/content/images/" + Model.Photo)" />
+                </div>
+                <div class="col-md-6">
+                    <dl class="dl-horizontal">
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Name)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.Name)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Color)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.Color)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Type)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.Type)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Season)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.Season)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Occasion)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.Occasion)
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </div>*@
 
 
 
