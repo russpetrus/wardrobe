@@ -4,36 +4,7 @@
 
 }
 
-.julius-font{
-    font-family: 'Julius Sans One', sans-serif;
-    text-transform:capitalize
-}
-
-#homepage-jumbotron {
-    background-image: url('images/wardrobe.jpg');
-    background-size:cover;
-    background-position:center;
-    height:75vh;
-    text-align:center;
-    padding-top:10vh;
-    padding-left:20%;
-    padding-right:20%;
-    border-bottom:4px solid #76323F;
-}
-
-.jumbotron-titlebox{
-    background-color:rgba(181, 177, 175, .9);
-    padding: 10px;
-    border:2px solid #76323F;
-    color:#76323F;
-    
-}
-
-.lead{
-    font-family: 'Crimson Text', serif;
-    font-style:italic;
-}
-
+/*navbar classes*/
 #universalnav{
     background-color:#B5B1AF;
     border-bottom: 2px solid #76323F;
@@ -67,10 +38,33 @@
 
 .navbar-toggle .icon-bar{ background-color:white;}
 
-img.index-photo{
-    margin-top:10px;
-    width:100%;   
+/*classes form jumbotron*/
+#homepage-jumbotron {
+    background-image: url('images/wardrobe.jpg');
+    background-size:cover;
+    background-position:center;
+    height:75vh;
+    text-align:center;
+    padding-top:10vh;
+    padding-left:20%;
+    padding-right:20%;
+    border-bottom:4px solid #76323F;
 }
+
+.jumbotron-titlebox{
+    background-color:rgba(181, 177, 175, .9);
+    padding: 10px;
+    border:2px solid #76323F;
+    color:#76323F;
+    
+}
+
+.lead{
+    font-family: 'Crimson Text', serif;
+    font-style:italic;
+}
+
+
 
 div.index-infoholder{
    
@@ -88,13 +82,19 @@ div.index-infoholder{
     text-align:center;
 }
 
+/*text treatment classes*/
+.julius-font{
+    font-family: 'Julius Sans One', sans-serif;
+    text-transform:capitalize
+}
+
 .red{
     color:#76323F;
     font-family: 'Julius Sans One', sans-serif;
     text-transform:capitalize
 }
 
-
+/*buttons link classes*/
 .btn-default{
     align-items:center;
     background-color:white;
@@ -111,9 +111,6 @@ div.index-infoholder{
     border-color:none;
 }
 
-.icon-holder{
-    display:inline-block;
-}
 
 .glyphicon-index-link{
     font-size:16px;
@@ -126,6 +123,12 @@ div.index-infoholder{
 .glyphicon-index-link:hover{
     text-decoration:none;
     color:#76323F;
+}
+
+/*classes for images*/
+img.index-photo{
+    margin-top:10px;
+    width:100%;   
 }
 
 
@@ -143,6 +146,12 @@ div.index-infoholder{
    margin: auto;
   
 
+}
+
+/*div block classes*/
+
+.icon-holder{
+    display:inline-block;
 }
 
 
