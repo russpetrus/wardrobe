@@ -1,7 +1,12 @@
 ﻿body {
   
-   
+   font-family: 'Crimson Text', serif;
 
+}
+
+.julius-font{
+    font-family: 'Julius Sans One', sans-serif;
+    text-transform:capitalize
 }
 
 #homepage-jumbotron {
@@ -10,16 +15,35 @@
     background-position:center;
     height:75vh;
     text-align:center;
-    border-bottom:4px solid #565656;
+    padding-top:10vh;
+    padding-left:20%;
+    padding-right:20%;
+    border-bottom:4px solid #76323F;
+}
+
+.jumbotron-titlebox{
+    background-color:rgba(181, 177, 175, .9);
+    padding: 10px;
+    border:2px solid #76323F;
+    color:#76323F;
+    
+}
+
+.lead{
+    font-family: 'Crimson Text', serif;
+    font-style:italic;
 }
 
 #universalnav{
-    background-color:#C09F80;
-    border-bottom: 2px solid #565656;
+    background-color:#B5B1AF;
+    border-bottom: 2px solid #76323F;
+    
 }
 
 .navbar-brand{
     color:#76323F;
+    font-family: 'Julius Sans One', sans-serif;
+    text-transform:capitalize;
 }
 
 .navbar-brand:hover{
@@ -66,7 +90,8 @@ div.index-infoholder{
 
 .red{
     color:#76323F;
-    text-transform:uppercase;
+    font-family: 'Julius Sans One', sans-serif;
+    text-transform:capitalize
 }
 
 
@@ -126,6 +151,8 @@ div.index-infoholder{
     background-color:#76323F;
     color:white;
     margin-bottom:15px;
+    text-align:center;
+    padding-top:100px;
 }
 
 .tan-box{
@@ -133,6 +160,8 @@ div.index-infoholder{
     background-color: #C09F80;
     color: white;
     margin-bottom:15px;
+    text-align:center;
+    padding-top:100px;
 }
 
 .gray-box{
@@ -140,7 +169,8 @@ div.index-infoholder{
     background-color: #B5B1AF;
     color:white;
     margin-bottom:15px;
-
+    text-align:center;
+    padding-top:100px;
 }
 
 .chalkboard-box{
@@ -148,5 +178,8 @@ div.index-infoholder{
     background-color: #565656;
     color:white;
     margin-bottom:15px;
+    text-align:center;
+    padding-top:100px;
 
 }
+

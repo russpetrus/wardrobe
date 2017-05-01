@@ -1,66 +1,67 @@
 ﻿@model WardrobeApp.Models.Sho
 
 @{
-    ViewBag.Title = "Details";
+    ViewBag.Title = Model.Name;
 }
 
-<h2>Details</h2>
+@*Replace EF with custom view layout and style*@
 
-<div>
-    <h4>Sho</h4>
+<div class="container">
+    <div>
+        <img class="img-thumbnail" src="@Url.Content("~/content/images/" + Model.Photo)" />
+    </div>
+
+    <div>
+        <h2 class="red">Details: @Model.Name</h2>
+
+        @*displays edit and back to list action links with glyphicons*@
+        <a class="glyphicon-index-link" href="@Url.Action("Edit", new { id = Model.ShoeID })">
+            <i class="glyphicon glyphicon-pencil"></i>
+            Edit
+            <span class="sr-only">Edit</span>
+        </a>
+        <a class="glyphicon-index-link" href="@Url.Action("Index")">
+            <i class="glyphicon glyphicon-th-list"></i>
+            Back to List
+            <span class="sr-only">Index</span>
+        </a>
+    </div>
     <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.Name)
-        </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Name)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Color)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Color)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Type)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Type)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Season)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Season)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Occasion)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Occasion)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Photo)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Photo)
-        </dd>
-
-    </dl>
+    @*displays details in boxes using bootstrap nested rows and columns -- a new row is not tagged in the second main column because bootstrap CSS margins and paddings made the color boxes offset from one another *@
+    <div class="row">
+        <div class="col-md-5">
+            <img class="detail-photo" src="@Url.Content("~/content/images/" + Model.Photo)" />
+        </div>
+        <div class="col-md-7">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="red-box">
+                        <p class="info-label">@Html.DisplayNameFor(model => model.Type)</p>
+                        <h4 class="julius-font">@Html.DisplayFor(model => model.Type)</h4>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="tan-box">
+                        <p class="info-label">@Html.DisplayNameFor(model => model.Color)</p>
+                        <h4 class="julius-font">@Html.DisplayFor(model => model.Color)</h4>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="gray-box">
+                        <p class="info-label">@Html.DisplayNameFor(model => model.Season)</p>
+                        <h4 class="julius-font">@Html.DisplayFor(model => model.Season)</h4>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="chalkboard-box">
+                        <p class="info-label">@Html.DisplayNameFor(model => model.Occasion)</p>
+                        <h4 class="julius-font">@Html.DisplayFor(model => model.Occasion)</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
-<p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.ShoeID }) |
-    @Html.ActionLink("Back to List", "Index")
-</p>
+
+
